@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/kasa-projet-immobilier/static/js/main.d70e7622.js",
+    "main.js": "/kasa-projet-immobilier/static/js/main.4a02d0a8.js",
     "static/media/mountains.svg": "/kasa-projet-immobilier/static/media/mountains.bb95764b977cc4097a67ee5993e4f4fc.svg",
     "static/media/gustavo.jpg": "/kasa-projet-immobilier/static/media/gustavo.cce3d02d3c71c3d4f8dd.jpg",
     "static/media/gustavoMobile.jpg": "/kasa-projet-immobilier/static/media/gustavoMobile.e2902d7ad3a2d4679d13.jpg",
     "static/media/logo.svg": "/kasa-projet-immobilier/static/media/logo.a6101328193bb3191cbcb50c120ec0d1.svg",
     "index.html": "/kasa-projet-immobilier/index.html",
-    "main.d70e7622.js.map": "/kasa-projet-immobilier/static/js/main.d70e7622.js.map"
+    "main.4a02d0a8.js.map": "/kasa-projet-immobilier/static/js/main.4a02d0a8.js.map"
   },
   "entrypoints": [
-    "static/js/main.d70e7622.js"
+    "static/js/main.4a02d0a8.js"
   ]
 }
