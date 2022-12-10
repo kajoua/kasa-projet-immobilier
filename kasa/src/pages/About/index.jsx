@@ -6,22 +6,52 @@ import Collapse from "../../utils/collapse"
 import styled from 'styled-components';
 
 const AboutContainer= styled.div`
-
+margin: 0 7%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+@media (max-width: 900px) {
+  margin-bottom: 10%;
+}
+@media (max-width: 600px) {
+  margin-bottom: 20%;
+}
 `
 const AboutImgDesktop =styled.img`
-border-radius: 10px;
-width: 80%;
-margin-left: 10%;
+height: 223px;
+border-radius: 25px;
+object-fit:cover;
+filter: brightness(50%) opacity(0.9);
+width: 100%;
+  @media (max-width: 600px) {
+    display:none;
+  }
 `
 const AboutImgMobile =styled.img`
-border-radius: 10px;
-width: 80%;
-margin-left: 10%;
+height: 223px;
+border-radius: 25px;
+object-fit:cover;
+filter: brightness(50%) opacity(0.9);
+width: 100%;
+display:none;
+@media (max-width: 600px) {
+    display:unset;
+  }
 `
 const AboutComment=styled.div`
-margin: 5% 12%;
-        display: flex;
-        flex-direction: column;
+margin: 5% 0 15% 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 70%;
+@media (max-width: 900px) {
+  width: 85%;
+}
+@media (max-width: 600px) {
+  width: 100%;
+}
+
 `
 const About = () => {
   useEffect(() => {
