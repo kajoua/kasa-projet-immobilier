@@ -19,6 +19,14 @@ z-index: 2;
         rgba(255, 255, 255, 0) 0%,
         rgba(0, 0, 0, 0.5) 100%
       );
+      @media (max-width: 900px) {
+        width: 335px;
+        height: 300px;
+      }
+      @media (max-width: 600px) {
+        height: 255px;
+        width:100%;
+      }
 `
 
 

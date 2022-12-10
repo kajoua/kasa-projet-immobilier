@@ -13,6 +13,9 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
 background: ${colors.greyLight};
+@media (max-width: 600px) {
+ background: transparent;
+  }
 `
 const ListCard = () => {
     
