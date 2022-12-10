@@ -21,21 +21,20 @@ const Logement
         <LogementContainer>
             <Carrousel pictures={logement.pictures}/>
       <LogementDetails>
-        <div className="singleLocation__title">
-          <h1 className="singleLocation__title__text">{logement.title}</h1>
-          <p className="singleLocation__location">{logement.location}</p>
+        <div >
+          <h3>{logement.title}</h3>
+          <p >{logement.location}</p>
         </div>
-        <div className="divRatingHost">
-        
+        <div>
           <Rating />
-         
-          <div className="host">
-            <p className="host__name">{logement.host.name} </p>
+  
+          <div >
+            <p>{logement.host.name} </p>
             <img src={logement.host.picture} alt="Hébergeur" />
           </div>
         </div>
     
-        <div className="singleLocation__tags flex">
+        <div>
           {logement.tags.map((tag, index) => (
             <Tags key={index} Tag={tag} />
           ))}

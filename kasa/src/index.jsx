@@ -9,6 +9,8 @@ import About from "./pages/About";
 import { createGlobalStyle } from 'styled-components'
 import Logement from "./pages/Logement";
 
+const routerBaseName = process.env.PUBLIC_URL;
+
 const GlobalStyle = createGlobalStyle`
     *{
       margin:0;
@@ -17,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
 `
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={routerBaseName}>
     <GlobalStyle />
     <Header/>
     <Switch>
