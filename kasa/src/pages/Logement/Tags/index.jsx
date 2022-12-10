@@ -1,10 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Tags = () => {
+const TagListe =styled.ul``
+const TagText =styled.p``
+const Tags = ({Tag}) => {
     return (
-        <div>
-            <p>Tags</p>
-        </div>
+        <TagListe>
+      <TagText>{Tag}</TagText>
+    </TagListe>
     );
 };
 

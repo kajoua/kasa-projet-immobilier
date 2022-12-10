@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Error from "./components/Error";
+import Error from "./pages/Error";
 import About from "./pages/About";
 import { createGlobalStyle } from 'styled-components'
 import Logement from "./pages/Logement";
@@ -23,7 +23,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/"><Home /></Route> 
       <Route path="/about"><About/></Route>
-      <Route path="/logement/:id">
+      <Route path="/:id">
         <Logement/>
       </Route>
       <Route><Error/></Route>

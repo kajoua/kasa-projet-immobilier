@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Card from '../Card';
 import { listProducts } from '../../datas';
 import styled from 'styled-components'
+
 const CardsContainer = styled.div`
     width: 100%;
     margin: 5%;
@@ -20,11 +21,12 @@ const ListCard = () => {
         <div>
             <CardsContainer>
             {listProducts.map((product)=>(
-                <Link to={`/logement/${product.id}`} key={`${product.id}`}>
+                <Link to={`/${product.id}`} key={`${product.id}`}>
                 <Card 
                 cover={product.cover}
-                title={product.title}
-/></Link>
+                title={product.title}/>
+                </Link>
+
             ))}</CardsContainer>
         </div>
     );
