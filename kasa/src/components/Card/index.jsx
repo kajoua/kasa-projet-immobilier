@@ -3,33 +3,49 @@ import PropTypes from "prop-types"
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
 
-const CardTitle = styled.span`
-color: ${colors.white};
-    font-size: 18px;
-    font-weight: 500;
-    position: absolute;
-    object-fit: cover;
-    padding: 268px 20px 20px 20px;
-`
-const CardImage = styled.img`
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-`
-const CardWrapper = styled.div`
 
+const CardWrapper = styled.div`
+position: relative;
+z-index: 2;
     display: flex;
     flex-direction: column;
-    background-color: ${colors.pink};
     border-radius: 10px;
     width: 340px;
     height: 340px;
-    margin: 56px 50px 0 50px;
+    margin: 20px 0 ;
     transition: 200ms;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+`
+
+
+const CardImage = styled.img`
+   cursor: pointer;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 1;
+    mix-blend-mode: multiply;
+    transition: 0.5s;
     &:hover {
-        cursor: pointer;
-        box-shadow: 2px 2px 10px #e2e3e9;
+    transition: 0.5s;
+    mix-blend-mode: normal;
+    box-shadow: 0px 3px 15px ${colors.greyDark};
     }
+`
+const CardTitle = styled.p`
+color: ${colors.white};
+    font-size: 18px;
+    z-index: 3;
+    font-weight: 500;
+    position: absolute;
+   top:79%;
+   left:6%;
+   right: 30%;
 `
 function Card({ title, cover }) {
     return (

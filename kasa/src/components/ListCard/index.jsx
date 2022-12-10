@@ -3,22 +3,21 @@ import { Link } from "react-router-dom";
 import Card from '../Card';
 import { listProducts } from '../../datas';
 import styled from 'styled-components'
+import colors from '../../utils/style/colors';
 
 const CardsContainer = styled.div`
 width: 100%;
-margin: 5%;
-background: #f7F7F7;
-border-radius: 10px;
+margin: 3% 0;
+border-radius: 25px;
 display: flex;
 flex-wrap: wrap;
-flex-direction: row; 
-background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+justify-content: space-evenly;
+background: ${colors.greyLight};
 `
 const ListCard = () => {
     
     
     return (
-        <div>
             <CardsContainer>
             {listProducts.map((product)=>(
                 <Link to={`/${product.id}`} key={`${product.id}`}>
@@ -27,8 +26,9 @@ const ListCard = () => {
                 title={product.title}/>
                 </Link>
 
-            ))}</CardsContainer>
-        </div>
+            ))}
+            </CardsContainer>
+       
     );
 };
 

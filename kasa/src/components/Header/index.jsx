@@ -13,7 +13,13 @@ const HeaderContainer = styled.nav`
   align-items: center;
 `
 const HeaderLogo = styled.img`
-  height: 48px;
+  height: 62px;
+  @media (max-width: 900px) {
+    height: 53px;
+  }
+  @media (max-width: 600px) {
+    height: 43px;
+  }
 `
 const Header = () => {
     return (
