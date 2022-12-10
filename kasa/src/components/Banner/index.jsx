@@ -1,37 +1,50 @@
 import React from 'react';
 import styled from 'styled-components';
 import colors from "../../utils/style/colors";
-
 import Moutains from '../../assets/images/mountains.svg';
 const HomeMoutain = styled.div `
-position: relative;
 height: 223px;
-left: 5%;
-right: 5%;
-width: 80%;
-background: ${colors.greyLight};
 border-radius: 25px;
-
-
+width: 100%;
+position:relative;
+@media (max-width: 900px) {
+    height: 150px;
+    border-radius: 17px;
+  }
+  @media (max-width: 600px) {
+    height: 111px;
+    border-radius: 10px;
+  }
 `
 const MoutainImg =styled.img`
-
+height: 223px;
 border-radius: 25px;
-background: ${colors.black};
-mix-blend-mode: darken;
-opacity: 0.3;
-object-fit:contain;
-
-
+object-fit:cover;
+filter: brightness(50%) opacity(0.7);
+width: 100%;
+@media (max-width: 900px) {
+    height: 150px;
+    border-radius: 17px;
+  }
+  @media (max-width: 600px) {
+    height: 111px;
+    border-radius: 10px;
+  }
 `;
 const TitleEffect = styled.p`
-position: absolute;
+position:absolute;
 color:${colors.white};
 font-weight: 500;
-font-size: 280%;
-RIGHT: 20%;
-    left: 20%;
-    TOP: 20%;
+font-size: 48px;
+right: 20%;
+left: 20%;
+top: 20%;
+@media (max-width: 900px) {
+    font-size: 36px;
+  }
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 `;
 
 const Banner

@@ -4,33 +4,29 @@ import styled from 'styled-components'
 import Logo from '../../assets/images/logo.svg'
 import { StyledLink } from '../../utils/Link/StyledLink'
 
-const HeaderLogo = styled.img`
-  height: 48px;
-`
-const NavContainer = styled.nav`
-  padding: 30px;
+
+const HeaderContainer = styled.nav`
+  margin: 0 7%;
+  padding: 5% 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `
+const HeaderLogo = styled.img`
+  height: 48px;
+`
 const Header = () => {
     return (
-        <NavContainer>
-    <Link to="/">
-    <HeaderLogo src={Logo} />
-  </Link>
+        <HeaderContainer>
+          <Link to="/">
+             <HeaderLogo src={Logo} />
+          </Link>
+
           <div>
-            <StyledLink to="/" >
-              Accueil
-            </StyledLink>
-            <StyledLink
-              to="/about"
-             
-            >
-              A propos
-            </StyledLink>
+            <StyledLink to="/" activeStyle={{textDecoration: "underline 1px"}}>Accueil</StyledLink>
+            <StyledLink to="/about" activeStyle={{textDecoration: "underline 1px"}}>A propos</StyledLink> 
           </div>
-          </NavContainer>
+        </HeaderContainer>
       );
     }
 

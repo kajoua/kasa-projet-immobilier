@@ -1,12 +1,22 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../style/colors'
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
   padding: 10px 15px;
   color: ${colors.pink};
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 500;
   text-align: center;
+  @media (max-width: 900px) {
+    font-size: 16px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+  }
+  @media (max-width: 600px) {
+    font-size: 12px;
+    padding: 10px 7px;
+  }
     
 `

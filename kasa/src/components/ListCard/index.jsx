@@ -5,8 +5,8 @@ import { listProducts } from '../../datas';
 import styled from 'styled-components'
 
 const CardsContainer = styled.div`
-    width: 100%;
-    margin: 5%;
+width: 100%;
+margin: 5%;
 background: #f7F7F7;
 border-radius: 10px;
 display: flex;
