@@ -5,28 +5,56 @@ import { Link } from "react-router-dom";
 
 import colors from '../../utils/style/colors';
 const ErrorWrapper = styled.div`
-position: absolute;
 display: flex;
 flex-direction: column;
 color: ${colors.pink};
-margin: 0 10% 5% 10%;
+margin: 0 0 10% 0;
 align-items:center;
+@media (max-width: 900px) {
+  margin: 0 0 10% 0;
+}
+@media (max-width: 600px) {
+  margin: 38% 20% 50% 20%;
+
+}
 `
-const ErrorTitle = styled.p`
+const ErrorTitle = styled.h1`
 font-size: 288px;
 font-weight: 700;
+@media (max-width: 900px) {
+  font-size: 150px;
+  
+}
+@media (max-width: 600px) {
+  font-size: 96px;
+
+}
 `
 const ErrorSubtitle = styled.p`
-margin-top: 50px;
-font-size: 34px;
+text-align: center;
+font-size: 36px;
 font-weight: 500;
+@media (max-width: 900px) {
+  font-size: 26px;margin-top:1%;
+}
+@media (max-width: 600px) {
+  font-size: 18px;  margin-top:2%;
+}
 `
 const ErrorLink = styled(Link)`
 color: ${colors.pink};
+font-weight:500;
+margin-top: 14%;
 font-size: 18px;
-text-decoration-line: underline;
-text-decoration: none;
-
+text-decoration: underline;
+@media (max-width: 900px) {
+  margin-top: 14%;
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  margin-top: 38%;
+  font-size: 14px;
+}
 `
 const Error = () => {
     useEffect(() => {

@@ -54,6 +54,12 @@ color: ${colors.white};
    top:79%;
    left:6%;
    right: 30%;
+   @media (max-width: 900px) {
+    top:76%;
+  }
+  @media (max-width: 600px) {
+    top:73%;
+  }
 `
 function Card({ title, cover }) {
     return (
