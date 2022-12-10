@@ -36,14 +36,20 @@ position:absolute;
 color:${colors.white};
 font-weight: 500;
 font-size: 48px;
-right: 20%;
-left: 20%;
-top: 20%;
+right: 13%;
+    left: 16%;
+    top: 38%;
 @media (max-width: 900px) {
     font-size: 36px;
+    right: 18%;
+    left: 13%;
+    top: 28%;
   }
   @media (max-width: 600px) {
     font-size: 24px;
+    right: 23%;
+    left: 10%;
+    top: 15%;
   }
 `;
 
