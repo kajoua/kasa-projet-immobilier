@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import {createRoot} from 'react-dom/client';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from "./pages/Home";
 import Header from "./layout/Header";
@@ -19,7 +19,10 @@ const GlobalStyle = createGlobalStyle`
       font-weight: 500;
     }
 `
-ReactDOM.render(
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
+root.render(
   <React.StrictMode>
     <Router basename={routerBaseName}>
     <GlobalStyle />
@@ -34,7 +37,7 @@ ReactDOM.render(
     </Switch>
     <Footer />
     </Router>
-  </React.StrictMode>, document.getElementById('root')
+  </React.StrictMode>
 );
 
 
