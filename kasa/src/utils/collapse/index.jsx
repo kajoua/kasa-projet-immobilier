@@ -76,7 +76,7 @@ const Collapse = (props) => {
       <CollapseButton onClick={() => setOpen(false)}>
         {props.label}
         <CollapseImg
-          src={vectorBas}
+          src={vectorH}
          
         ></CollapseImg>
       </CollapseButton>
@@ -85,7 +85,7 @@ const Collapse = (props) => {
   ) : (
     <CollapseButton onClick={() => setOpen(true)}>
       {props.label}
-      <CollapseImg src={vectorH}></CollapseImg>
+      <CollapseImg src={vectorBas}></CollapseImg>
     </CollapseButton>
   );
 };
