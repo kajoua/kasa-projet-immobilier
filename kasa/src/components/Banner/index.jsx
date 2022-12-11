@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import colors from "../../utils/style/colors";
 import Moutains from '../../assets/images/mountains.svg';
+
 const HomeMoutain = styled.div `
 height: 223px;
 border-radius: 25px;

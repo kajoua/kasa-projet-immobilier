@@ -7,6 +7,12 @@ import Tags from '../../pages/Logement/Tags';
 import Rating from './Rating';
 import Collapse from '../../utils/collapse';
 import Error from '../Error';
+import colors from '../../utils/style/colors';
+
+const StyleBox=`
+display:flex;
+flex-wrap: wrap;
+`
  const LogementContainer = styled.div`
  margin: 0 7%;
  @media (max-width: 900px) { 
@@ -19,12 +25,12 @@ import Error from '../Error';
  const LogementDetails = styled.div`
  margin: 2% 0;
  width: 100%;
- display: flex; 
- flex-wrap: wrap; 
+ ${StyleBox}
  @media (max-width: 900px) { 
   margin-bottom: 10%;
 }
 @media (max-width: 600px) {
+  margin-top: 0;
   margin-bottom: 15%;
 }
  `;
@@ -32,28 +38,95 @@ import Error from '../Error';
 const LogementName =styled.div`
 background: #7FFF00;
 width: 70%;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
 @media (max-width: 600px) {
   width: 100%;
 }
 `
+const LogementNameDetail=styled.div`
+color:${colors.pink};
+width: 90%;
+`
+const LogementNameTitle=styled.p`
+font-weight: 500;
+font-size: 36px;
+@media (max-width: 900px) {
+  font-size: 27px;
+}
+@media (max-width: 600px) {
+  font-size: 18px;
+}
+`
+const LogementNameLocation=styled.p`
+font-weight: 500;
+font-size: 18px;
+@media (max-width: 900px) {
+  margin-top: 5%;
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  margin-top: 5%;
+  font-size: 14px;
+}
+`
+const LogementNameTag = styled.div`
+margin-top:5%;
+${StyleBox}`
 
 const LogementHost =styled.div`
-background: #9400D3;
 width: 30%;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: space-between;
 @media (max-width: 600px) {
   width: 100%;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+`
+const LogementHostDetails =styled.div`
+display: flex; 
+flex-direction: row;
+`
+
+const LogementHostName =styled.p`
+text-align: end;
+color:${colors.pink};
+font-weight : 500; 
+font-size:18px;
+margin-top: 5%;
+margin-right: 6%;
+@media (max-width: 600px) {
+  font-size:12px;
+}
+`
+const LogementHostImg =styled.img`
+border-radius:50px;
+height: 64px;
+width: 64px;
+@media (max-width: 600px) {
+  height: 46px;
+  margin-top: 5%;
+width: 46px;
+}
+@media (max-width: 600px) {
+  height: 32px;
+width: 32px;
 }
 `
 
 const LogementCollapse = styled.div`
 width: 100%;
-display: flex; 
-flex-wrap: wrap;
+${StyleBox}
 justify-content: space-between;
 }
 `
 const LogementCollapseUn =styled.div`
 width:40%;
+margin-top:2%;
 @media (max-width: 900px) {
   width: 47%;
 }
@@ -73,20 +146,21 @@ const Logement
             <Carrousel pictures={logement.pictures}/>
       <LogementDetails>
         <LogementName >
-          <h3>{logement.title}</h3>
-          <p >{logement.location}</p>
-        
-         <div>
+          <LogementNameDetail>
+          <LogementNameTitle >{logement.title}</LogementNameTitle>
+          <LogementNameLocation>{logement.location}</LogementNameLocation>
+        </LogementNameDetail>
+         <LogementNameTag>
           {logement.tags.map((tag, index) => (
             <Tags key={index} Tag={tag} />
           ))}
-        </div>
+        </LogementNameTag>
         </LogementName>
         <LogementHost>
-          <div >
-            <p>{logement.host.name} </p>
-            <img src={logement.host.picture} alt="Hébergeur" />
-          </div>
+          <LogementHostDetails>
+            <LogementHostName>{logement.host.name} </LogementHostName>
+            <LogementHostImg src={logement.host.picture} alt="Hébergeur" />
+          </LogementHostDetails>
           <Rating />
         </LogementHost>
 
