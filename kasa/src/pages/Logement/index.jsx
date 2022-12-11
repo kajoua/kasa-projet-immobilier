@@ -7,7 +7,15 @@ import Tags from '../../pages/Logement/Tags';
 import Rating from './Rating';
 import Collapse from '../../utils/collapse';
 import Error from '../Error';
- const LogementContainer = styled.div``;
+ const LogementContainer = styled.div`
+ margin: 0 7%;
+ @media (max-width: 900px) { 
+  margin-bottom: 10%;
+}
+@media (max-width: 600px) {
+  margin-bottom: 20%;
+}
+ `
  const LogementDetails = styled.div``;
  const LogementCollapse = styled.div``;
 
