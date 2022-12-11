@@ -4,7 +4,6 @@ import Colors from '../../utils/style/Colors'
 import Logo from '../Logo';
 import { JustifyContentCenter } from '../../utils/style/Mixins';
 const FooterBanner =styled.footer`
-color: ${Colors.white};
 width: 100%;
 height:209px;
 background-color: ${Colors.black};
@@ -12,6 +11,7 @@ ${JustifyContentCenter}
 bottom:0;
 `
 const FooterText= styled.p`
+color: ${Colors.white};
 margin-top:20px;
 font-size: 24px; 
 @media (max-width: 900px) {
