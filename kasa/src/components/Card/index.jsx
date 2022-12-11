@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types"
 import styled from 'styled-components'
-import colors from '../../utils/style/colors'
+import Colors from '../../utils/style/Colors'
 
 
 const CardWrapper = styled.div`
@@ -43,7 +43,7 @@ const CardImage = styled.img`
     &:hover {
     transition: 0.5s;
     mix-blend-mode: normal;
-    box-shadow: 0px 3px 15px ${colors.greyDark};
+    box-shadow: 0px 3px 15px ${Colors.greyDark};
     }
     @media (max-width: 900px) {
         width: 335px;
@@ -55,10 +55,9 @@ const CardImage = styled.img`
       }
 `
 const CardTitle = styled.p`
-color: ${colors.white};
+color: ${Colors.white};
     font-size: 18px;
     z-index: 3;
-    font-weight: 500;
     position: absolute;
    top:79%;
    left:6%;

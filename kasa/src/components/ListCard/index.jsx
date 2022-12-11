@@ -3,16 +3,15 @@ import { Link } from "react-router-dom";
 import Card from '../Card';
 import { listProducts } from '../../datas';
 import styled from 'styled-components'
-import colors from '../../utils/style/colors';
-
+import Colors from '../../utils/style/Colors';
+import { Wrap } from '../../utils/style/Mixins';
 const CardsContainer = styled.div`
 width: 100%;
 margin: 3% 0;
 border-radius: 25px;
-display: flex;
-flex-wrap: wrap;
+${Wrap}
 justify-content: space-evenly;
-background: ${colors.greyLight};
+background: ${Colors.greyLight};
 @media (max-width: 600px) {
  background: transparent;
   }

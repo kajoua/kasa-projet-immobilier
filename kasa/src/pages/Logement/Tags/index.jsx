@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import colors from '../../../utils/style/colors';
+import colors from '../../../utils/style/Colors';
 import PropTypes from "prop-types";
+
 const TagListe =styled.ul`
 text-align: center;
 margin-top: 10px;
 color: ${colors.white};
 height: 25px;
-font-weight: 500;
 border-radius: 10px;
 padding: 0px 10px;
 margin-right: 10px;

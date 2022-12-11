@@ -4,13 +4,18 @@ import gustavoMobile from "../../assets/images/gustavoMobile.jpg"
 import { useEffect } from "react";
 import Collapse from "../../utils/collapse"
 import styled from 'styled-components';
+import { JustifyContentCenter, AlignItemCenter } from '../../utils/style/Mixins';
+
+const SameContentImgAbout =`
+height: 223px;
+border-radius: 25px;
+object-fit:cover;
+filter: brightness(50%) opacity(0.9);
+width: 100%;`
 
 const AboutContainer= styled.div`
 margin: 0 7%;
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+${JustifyContentCenter}
 @media (max-width: 900px) {
   margin-bottom: 10%;
 }
@@ -19,11 +24,7 @@ align-items: center;
 }
 `
 const AboutImgDesktop =styled.img`
-height: 223px;
-border-radius: 25px;
-object-fit:cover;
-filter: brightness(50%) opacity(0.9);
-width: 100%;
+${SameContentImgAbout}
 max-width:1240px;
 min-width: 335;
   @media (max-width: 600px) {
@@ -31,11 +32,7 @@ min-width: 335;
   }
 `
 const AboutImgMobile =styled.img`
-height: 223px;
-border-radius: 25px;
-object-fit:cover;
-filter: brightness(50%) opacity(0.9);
-width: 100%;
+${SameContentImgAbout}
 display:none;
 @media (max-width: 600px) {
     display:unset;
@@ -43,9 +40,7 @@ display:none;
 `
 const AboutComment=styled.div`
 margin: 5% 0 15% 0;
-display: flex;
-flex-direction: column;
-align-items: center;
+${AlignItemCenter}
 width: 70%;
 @media (max-width: 900px) {
   width: 85%;
@@ -53,7 +48,6 @@ width: 70%;
 @media (max-width: 600px) {
   width: 100%;
 }
-
 `
 const About = () => {
   useEffect(() => {

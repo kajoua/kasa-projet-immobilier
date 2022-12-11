@@ -1,23 +1,19 @@
 import React from 'react';
 import styled from 'styled-components'
-import colors from '../../utils/style/colors'
+import Colors from '../../utils/style/Colors'
 import Logo from '../Logo';
-
+import { JustifyContentCenter } from '../../utils/style/Mixins';
 const FooterBanner =styled.footer`
-color: ${colors.white};
+color: ${Colors.white};
 width: 100%;
 height:209px;
-background-color: ${colors.black};
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+background-color: ${Colors.black};
+${JustifyContentCenter}
 bottom:0;
 `
 const FooterText= styled.p`
 margin-top:20px;
 font-size: 24px; 
-font-weight: 500;
 @media (max-width: 900px) {
     font-size: 16px;
   }

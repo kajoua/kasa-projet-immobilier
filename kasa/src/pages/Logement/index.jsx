@@ -7,12 +7,8 @@ import Tags from '../../pages/Logement/Tags';
 import Rating from './Rating';
 import Collapse from '../../utils/collapse';
 import Error from '../Error';
-import colors from '../../utils/style/colors';
+import { Wrap, SpaceBetween} from '../../utils/style/Mixins';
 
-const StyleBox=`
-display:flex;
-flex-wrap: wrap;
-`
  const LogementContainer = styled.div`
  margin: 0 7%;
  @media (max-width: 900px) { 
@@ -25,7 +21,7 @@ flex-wrap: wrap;
  const LogementDetails = styled.div`
  margin: 2% 0;
  width: 100%;
- ${StyleBox}
+ ${Wrap}
  @media (max-width: 900px) { 
 margin-top: -2%;
   margin-bottom: 10%;
@@ -38,19 +34,15 @@ margin-top: -2%;
 
 const LogementName =styled.div`
 width: 70%;
-display:flex;
-flex-direction: column;
-justify-content: space-between;
+${SpaceBetween}
 @media (max-width: 600px) {
   width: 100%;
 }
 `
 const LogementNameDetail=styled.div`
-color:${colors.pink};
 width: 90%;
 `
 const LogementNameTitle=styled.p`
-font-weight: 500;
 font-size: 36px;
 @media (max-width: 900px) {
   font-size: 27px;
@@ -60,7 +52,6 @@ font-size: 36px;
 }
 `
 const LogementNameLocation=styled.p`
-font-weight: 500;
 font-size: 18px;
 @media (max-width: 900px) {
   margin-top: 5%;
@@ -73,14 +64,12 @@ font-size: 18px;
 `
 const LogementNameTag = styled.div`
 margin-top:5%;
-${StyleBox}`
+${Wrap}`
 
 const LogementHost =styled.div`
+${SpaceBetween}
 width: 30%;
-display: flex;
-flex-direction: column;
 align-items: flex-end;
-justify-content: space-between;
 @media (max-width: 900px) {
   width: 100%;
   flex-direction: row-reverse;
@@ -97,8 +86,6 @@ flex-direction: row;
 
 const LogementHostName =styled.p`
 text-align: end;
-color:${colors.pink};
-font-weight : 500; 
 font-size:18px;
 margin-top: 5%;
 margin-right: 6%;
@@ -123,7 +110,7 @@ width: 32px;
 
 const LogementCollapse = styled.div`
 width: 100%;
-${StyleBox}
+${Wrap}
 justify-content: space-between;
 }
 `

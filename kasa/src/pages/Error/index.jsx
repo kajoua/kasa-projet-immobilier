@@ -2,14 +2,10 @@ import React from 'react';
 import styled from 'styled-components'
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-
-import colors from '../../utils/style/colors';
+import { AlignItemCenter } from '../../utils/style/Mixins';
 const ErrorWrapper = styled.div`
-display: flex;
-flex-direction: column;
-color: ${colors.pink};
+${AlignItemCenter}
 margin: 0 0 10% 0;
-align-items:center;
 @media (max-width: 900px) {
   margin: 0 0 10% 0;
 }
@@ -33,7 +29,6 @@ font-weight: 700;
 const ErrorSubtitle = styled.p`
 text-align: center;
 font-size: 36px;
-font-weight: 500;
 @media (max-width: 900px) {
   font-size: 26px;margin-top:1%;
 }
@@ -42,8 +37,6 @@ font-weight: 500;
 }
 `
 const ErrorLink = styled(Link)`
-color: ${colors.pink};
-font-weight:500;
 margin-top: 14%;
 font-size: 18px;
 text-decoration: underline;

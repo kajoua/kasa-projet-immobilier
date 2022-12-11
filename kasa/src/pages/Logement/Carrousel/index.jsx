@@ -3,7 +3,7 @@ import { useState } from 'react';
 import PropTypes from "prop-types";
 import vectorDroit from "../../../assets/images/vectorDroit.png"
 import vectorGauche from "../../../assets/images/vectorGauche.png"
-import colors from '../../../utils/style/colors';
+import colors from '../../../utils/style/Colors';
 import styled from 'styled-components';
 
 const CarrouselContainer =styled.div`
@@ -37,7 +37,6 @@ const CarrouselText= styled.p`
 cursor: default;
 position:absolute;
 font-size: 18px;
-font-weight: 500;
 color: ${colors.white};
 left: 50%;
 bottom: 5%;

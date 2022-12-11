@@ -8,13 +8,15 @@ import Error from "./pages/Error";
 import About from "./pages/About";
 import { createGlobalStyle } from 'styled-components'
 import Logement from "./pages/Logement";
-
+import colors from "./utils/style/Colors";
 const routerBaseName = process.env.PUBLIC_URL;
 
 const GlobalStyle = createGlobalStyle`
     *{
       margin:0;
-        font-family: 'Montserrat', Helvetica, sans-serif;
+      font-family: 'Montserrat', Helvetica, sans-serif;
+      color: ${colors.pink};
+      font-weight: 500;
     }
 `
 ReactDOM.render(
