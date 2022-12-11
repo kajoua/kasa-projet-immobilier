@@ -3,7 +3,7 @@ import { useState } from "react";
 import styled from 'styled-components';
 import vectorBas from "../../assets/images/vectorCollapse.jpg";
 import vectorH from "../../assets/images/vectorH.jpg";
-import colors from "../style/Colors";
+import Colors from "../style/Colors";
 
 
 
@@ -12,7 +12,7 @@ margin:0 0 20px 0;
 border: none;
 width:100%;
 border-radius:10px;
-background: ${colors.greyLight};
+background: ${Colors.greyLight};
 @media (max-width: 600px) {
   border-radius: 5px;
 }
@@ -25,9 +25,9 @@ cursor: pointer;
     font-size: 24px;
     padding: 0px 10%;
     border-radius: 10px;
-    background-color: ${colors.pink};
+    background-color: ${Colors.pink};
     margin : 0 0 20px 0;
-    color: ${colors.white};
+    color: ${Colors.white};
     display: flex;
     justify-content: space-between;
     align-items: center;

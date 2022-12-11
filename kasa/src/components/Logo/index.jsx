@@ -3,7 +3,7 @@ import kasa from "../../assets/images/kasa.png";
 import kasaPorte from "../../assets/images/kasaPorte.png";
 import styled from 'styled-components'
 import { LinkLogo } from '../../utils/Link/Logo';
-import colors from '../../utils/style/Colors';
+import Colors from '../../utils/style/Colors';
 const KasaMaisonImg =styled.div`
 position:relative;
 `
@@ -23,8 +23,7 @@ top: 28px;
 const TextLogo =styled.p`
 padding: 0 4px;
 font-size: 36px;
-font-weight: 500;
-color: ${colors.white};
+color: ${Colors.white};
 
 `
 const Logo = () => {

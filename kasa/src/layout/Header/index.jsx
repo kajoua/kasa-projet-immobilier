@@ -25,7 +25,7 @@ const Header = () => {
     return (
         <HeaderContainer>
           <Link to="/">
-             <HeaderLogo src={Logo} />
+             <HeaderLogo src={Logo} alt="Logo Kasa" />
           </Link>
 
           <div>

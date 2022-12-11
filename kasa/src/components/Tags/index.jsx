@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import colors from '../../../utils/style/Colors';
+import Colors from '../../utils/style/Colors';
 import PropTypes from "prop-types";
 
 const TagListe =styled.ul`
 text-align: center;
 margin-top: 10px;
-color: ${colors.white};
+color: ${Colors.white};
 height: 25px;
 border-radius: 10px;
 padding: 0px 10px;
@@ -15,7 +15,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 white-space: nowrap;
-background-color: ${colors.pink};
+background-color: ${Colors.pink};
 width: 115px;
 @media (max-width: 600px) {
   border-radius: 5px;
@@ -24,7 +24,7 @@ width: 115px;
 }
 `
 const TagText =styled.p`
-color: ${colors.white};
+color: ${Colors.white};
     font-size: 10px;
     text-transform: none;
     

@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { listProducts } from '../../datas';
-import Carrousel from './Carrousel';
+import Carrousel from '../../components/Carrousel';
 import styled from 'styled-components';
-import Tags from '../../pages/Logement/Tags';
-import Rating from './Rating';
+import Tags from '../../components/Tags';
+import Rating from '../../components/Rating';
 import Collapse from '../../utils/collapse';
 import Error from '../Error';
 import { Wrap, SpaceBetween} from '../../utils/style/Mixins';

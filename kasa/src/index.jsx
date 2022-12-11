@@ -2,20 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from "./pages/Home";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
 import Error from "./pages/Error";
 import About from "./pages/About";
 import { createGlobalStyle } from 'styled-components'
 import Logement from "./pages/Logement";
-import colors from "./utils/style/Colors";
+import Colors from "./utils/style/Colors";
 const routerBaseName = process.env.PUBLIC_URL;
 
 const GlobalStyle = createGlobalStyle`
     *{
       margin:0;
       font-family: 'Montserrat', Helvetica, sans-serif;
-      color: ${colors.pink};
+      color: ${Colors.pink};
       font-weight: 500;
     }
 `

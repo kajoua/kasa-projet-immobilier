@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-import Colors from '../../utils/style/Colors'
-import Logo from '../Logo';
+import Colors from '../../utils/style/Colors';
+import Logo from '../../components/Logo';
 import { JustifyContentCenter } from '../../utils/style/Mixins';
 const FooterBanner =styled.footer`
 width: 100%;

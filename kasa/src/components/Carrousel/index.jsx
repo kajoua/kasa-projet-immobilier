@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import PropTypes from "prop-types";
-import vectorDroit from "../../../assets/images/vectorDroit.png"
-import vectorGauche from "../../../assets/images/vectorGauche.png"
-import colors from '../../../utils/style/Colors';
+import vectorDroit from "../../assets/images/vectorDroit.png"
+import vectorGauche from "../../assets/images/vectorGauche.png"
+import Colors from '../../utils/style/Colors';
 import styled from 'styled-components';
 
 const CarrouselContainer =styled.div`
@@ -37,7 +37,7 @@ const CarrouselText= styled.p`
 cursor: default;
 position:absolute;
 font-size: 18px;
-color: ${colors.white};
+color: ${Colors.white};
 left: 50%;
 bottom: 5%;
 @media (max-width: 900px) { 

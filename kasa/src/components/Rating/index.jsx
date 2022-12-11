@@ -1,8 +1,8 @@
 import React from 'react';
-import { listProducts } from '../../../datas';
+import { listProducts } from "../../datas";
 import { useParams } from 'react-router-dom';
-import star from "../../../assets/images/star.png";
-import starPink from "../../../assets/images/starPink.png";
+import star from "../../assets/images/star.png";
+import starPink from "../../assets/images/starPink.png"
 import styled from 'styled-components';
 
 
