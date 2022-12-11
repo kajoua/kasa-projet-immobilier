@@ -33,7 +33,7 @@ root.render(
       <Route path="/:id">
         <Logement/>
       </Route>
-      <Route><Error/></Route>
+      <Route path="*"><Error/></Route>
     </Switch>
     <Footer />
     </Router>
