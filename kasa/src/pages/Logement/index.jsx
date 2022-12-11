@@ -27,16 +27,16 @@ flex-wrap: wrap;
  width: 100%;
  ${StyleBox}
  @media (max-width: 900px) { 
+margin-top: -2%;
   margin-bottom: 10%;
 }
 @media (max-width: 600px) {
-  margin-top: 0;
+  margin-top: -5%;
   margin-bottom: 15%;
 }
  `;
 
 const LogementName =styled.div`
-background: #7FFF00;
 width: 70%;
 display:flex;
 flex-direction: column;
@@ -81,10 +81,13 @@ display: flex;
 flex-direction: column;
 align-items: flex-end;
 justify-content: space-between;
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   width: 100%;
   flex-direction: row-reverse;
   align-items: center;
+}
+@media (max-width: 600px) {
+margin-top:2%;
 }
 `
 const LogementHostDetails =styled.div`

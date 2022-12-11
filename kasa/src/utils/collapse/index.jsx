@@ -22,9 +22,10 @@ const CollapseButton = styled.div`
 cursor: pointer;
     border: none;
     height: 47px;
-    width: 100%;
+    width: 80%;
     font-size: 24px;
     font-weight: 500;
+    padding: 0px 10%;
     border-radius: 10px;
     background-color: ${colors.pink};
     margin : 0 0 20px 0;
@@ -45,8 +46,7 @@ cursor: pointer;
 `
 const CollapseImg =styled.img`
 height: 15px;
-width: 23px;
-padding-right: 8%;
+width: 23px;S
 @media (max-width: 900px) {
   height: 11px;
 width: 18px;
