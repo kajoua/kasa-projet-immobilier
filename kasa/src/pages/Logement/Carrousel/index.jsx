@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import PropTypes from "prop-types";
 import vectorDroit from "../../../assets/images/vectorDroit.png"
 import vectorGauche from "../../../assets/images/vectorGauche.png"
 import colors from '../../../utils/style/colors';
@@ -86,5 +87,9 @@ const Carrousel = ({pictures}) => {
         </CarrouselContainer>
       )
 };
+
+Carrousel.propTypes = {
+  pictures: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
+}
 
 export default Carrousel;

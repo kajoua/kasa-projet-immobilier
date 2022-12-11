@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import colors from '../../../utils/style/colors';
-
+import PropTypes from "prop-types";
 const TagListe =styled.ul`
 text-align: center;
 color: ${colors.white};
@@ -26,9 +26,15 @@ color: ${colors.white};
 const Tags = ({Tag}) => {
     return (
         <TagListe>
-      <TagText>{Tag}</TagText>
+      <TagText >{Tag}</TagText>
     </TagListe>
     );
 };
 
+Tags.propTypes ={
+  tag: PropTypes.string.isRequired,
+}
+Tags.defaultProps = {
+  tag: '',
+}
 export default Tags;

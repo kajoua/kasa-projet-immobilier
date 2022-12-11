@@ -73,7 +73,7 @@ color: ${colors.white};
 function Card({ title, cover }) {
     return (
         <CardWrapper>
-            <CardImage src={cover} alt="ListCard" height={80} width={80} />
+            <CardImage src={cover} alt="ListCard"/>
             <CardTitle >{title}</CardTitle >
         </CardWrapper>
     )

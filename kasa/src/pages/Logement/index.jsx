@@ -56,7 +56,6 @@ const LogementCollapseUn =styled.div`
 width:40%;
 @media (max-width: 900px) {
   width: 47%;
-  max-width: 335px;
 }
 @media (max-width: 600px) {
   width: 100%;
@@ -101,7 +100,7 @@ const Logement
          <Collapse 
       label="Équipements">
         {logement.equipments.map((equipment, index) => (
-        <p>{equipment} </p>
+        <p key={index}>{equipment} </p>
       ))}
  </Collapse>
  </LogementCollapseUn>
