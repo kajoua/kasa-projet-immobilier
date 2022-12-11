@@ -4,14 +4,19 @@ import styled from 'styled-components';
 import vectorBas from "../../assets/images/vectorCollapse.jpg";
 import vectorH from "../../assets/images/vectorH.jpg";
 import colors from "../style/colors";
+
 const CollapseContainer = styled.div`
 margin:0 0 20px 0;
 border: none;
-border-radius:5px;
+width:100%;
+border-radius:10px;
 // display:flex;
 // justify-content:center;
 // flex-direction: column;
 background: ${colors.greyLight};
+@media (max-width: 600px) {
+  border-radius: 5px;
+}
 `
 const CollapseButton = styled.div`
 cursor: pointer;
@@ -20,7 +25,7 @@ cursor: pointer;
     width: 100%;
     font-size: 24px;
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: ${colors.pink};
     margin : 0 0 20px 0;
     color: ${colors.white};
@@ -30,9 +35,12 @@ cursor: pointer;
     flex-direction: row;
     @media (max-width: 900px) {
       font-size: 18px;
+      height: 40px;
     }
     @media (max-width: 600px) {
       font-size: 13px;
+      height: 30px;
+      border-radius: 5px;
     }
 `
 const CollapseImg =styled.img`

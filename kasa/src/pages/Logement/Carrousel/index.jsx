@@ -52,20 +52,14 @@ cursor:pointer;
 position:absolute;
 border:none;
 background: transparent;
-&.droit{
-  right: 0%;
-}
+&.droit{ right: 0%;}
 `
 const CarrouselImgVector =styled.img`
 height: 80px;
-
 @media (max-width: 900px) { 
-  height: 50px;
-}
+  height: 50px;}
 @media (max-width: 600px) {
-  height: 20px;
-}
-`
+  height: 20px;}`
 
 
 const Carrousel = ({pictures}) => {

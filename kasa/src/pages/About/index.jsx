@@ -24,6 +24,8 @@ border-radius: 25px;
 object-fit:cover;
 filter: brightness(50%) opacity(0.9);
 width: 100%;
+max-width:1240px;
+min-width: 335;
   @media (max-width: 600px) {
     display:none;
   }

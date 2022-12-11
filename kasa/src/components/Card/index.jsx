@@ -26,6 +26,7 @@ z-index: 2;
       @media (max-width: 600px) {
         height: 255px;
         width:100%;
+        min-width: 322px;
       }
 `
 
@@ -44,6 +45,14 @@ const CardImage = styled.img`
     mix-blend-mode: normal;
     box-shadow: 0px 3px 15px ${colors.greyDark};
     }
+    @media (max-width: 900px) {
+        width: 335px;
+        height: 300px;
+      }
+      @media (max-width: 600px) {
+        height: 255px;
+        width:100%;
+      }
 `
 const CardTitle = styled.p`
 color: ${colors.white};
